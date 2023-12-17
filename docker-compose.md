@@ -4,7 +4,7 @@ DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 建立插件目录
 mkdir -p $DOCKER_CONFIG/cli-plugins
 下载二进制文件
-$ curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o DOCKER_CONFIG/cli-plugins/docker-compose
 赋予权限
 chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 验证命令：
